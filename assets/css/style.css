@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container{
+    width: 1440px;
+    height: 1024PX;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col12{
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.bg_clr{
+    background-color: grey;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    border-radius:30% 70% 70% 30% / 49% 30% 70% 51%;
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color:rebeccapurple;
+    transform: rotate(20deg);
+    border-radius:30% 70% 70% 30% / 49% 30% 70% 51%;
+  }
+  @keyframes example {
+    0%   {background-color: aqua; left:0px; top:0px;}
+    25%  {background-color: blue; left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+    
+  }
+  .circle:hover{
+    cursor: pointer;
+    transform: rotate(400deg); 
+  }
+  .align_cnter{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    opacity: 0.8;
+  }
